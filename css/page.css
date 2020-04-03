@@ -1,0 +1,27 @@
+	body{padding: 0;margin:0;}
+	a{text-decoration: none;}
+	a:hover{text-decoration: underline;}
+	body>div{width:1600px;margin:auto;}
+	#container{position: relative;}
+	#container #config_big{border:1px solid #ccc;background:#fff;width:350px;height: 500px;position: absolute;right:0;top:30px;z-index: 9999;display: none;overflow: auto;}
+	#config{position: absolute;right:0;top:0;cursor: pointer}
+	#div_bigmap{position: absolute;}
+	#div1{text-align:center;height:30px;}
+	#div2{height:30px;}
+	#div2 div{width:200px;margin:auto;display: flex;justify-content: center;}
+	#div2 div a{margin-left:20px;}
+	#div_smallmap{position: absolute;min-height: 1000px;width: 100%;display: none;}
+	#div_smallmap #map_pic{position: relative;}
+	#div_smallmap #map_pic img{position: absolute;top:0;left:0;display: none;}
+	#div_smallmap #map_pic img:nth-of-type(1){display: block;}
+				  #map_pic_small{position: absolute;margin-left:10px;width: 150px;height: 400px;top:0;left:800px;border:#ccc 1px solid;overflow: auto;}/*地圖縮圖區塊*/
+				  #map_pic_small img{width: 80px;height: 80px;margin:30px auto;display: block;}/*地圖縮圖*/
+				  #map_pic_small img:hover{cursor: pointer;}
+				  #map_pic_small #black_matte{width: 100%;height:80px;position: absolute;left:0;top:30px;background: rgba(0,0,0,0.3);z-index:-1}
+	#div_smallmap #location{position:absolute;height:500px;min-width: 300px;top:0;left:1000px;}
+	#div_smallmap #location p{margin-left:50px;position: relative;}
+	#div_smallmap #location .npc_box{position: absolute;top:0;left:0;display: none;overflow:auto;height:500px;min-width: 450px;}
+	#div_smallmap #location .npc_box:nth-of-type(1){display: block;}
+	#div_smallmap #monster_move{position: absolute;top:0;left:0;width: 80px;height: 80px;z-index: 9999}
+	#div_smallmap #name_pointer{position: absolute;display:none;left:0;top:0;}
+	.become_bold{font-weight: bold;cursor: pointer}
