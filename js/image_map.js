@@ -1,7 +1,7 @@
 $(function(){
 		
-		if(localStorage.getItem("map_data") == null)
-		{
+		// if(localStorage.getItem("map_data") == null)
+		// {
 			$.getJSON("json/xddd.json",function(x){
 							localStorage.setItem("map_data",JSON.stringify(x));
 							$.ajax({
@@ -9,7 +9,7 @@ $(function(){
 							url:"big_map.php",
 							data:
 							{
-								data:localStorage.getItem("map_data")
+								data:JSON.stringify(x)
 							},success:function(message)
 							{
 								$("#div_bigmap").html(message)
@@ -30,7 +30,7 @@ $(function(){
 							}
 							})
 					})
-		}
+		// }
 		$("#bm_btn").click(function(){ //大地圖切換
 			$("#div_bigmap").show();
 			$("#div_smallmap").hide();
@@ -139,4 +139,5 @@ $(function(){
 			localStorage.setItem("monster_move",$(this).val())
 		})
 		/////
+		
 	})
